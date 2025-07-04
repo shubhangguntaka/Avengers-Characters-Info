@@ -159,6 +159,17 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+footer {
+  background: linear-gradient(90deg, #222 0%, #444 100%);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
