@@ -42,7 +42,7 @@ function App() {
             onTimelineClick={scrollToTimeline}
             onMoviesClick={scrollToMovies}
           />
-          <div className="pt-10">
+          <div className="pt-20">
             <div ref={heroRef} />
             <Routes>
               <Route
