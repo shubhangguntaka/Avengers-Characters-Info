@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Avengers';
+  src: url('./assets/fonts/Avengers.ttf');
+}
+@font-face {
+  font-family: 'Avengers3D';
+  src: url('./assets/fonts/Avengers 3D.ttf');
+}
+@font-face {
+  font-family: 'American Captain';
+  src: url('./assets/fonts/American Captain.ttf');
+}
+@font-face {
+  font-family: 'Iron Man';
+  src: url('./assets/fonts/Iron Man.otf');
+}
+@font-face {
+  font-family: 'Thor';
+  src: url('./assets/fonts/Thor.ttf');
+}
+@font-face {
+  font-family: 'Hulk';
+  src: url('./assets/fonts/Hulk.ttf');
+}
+@font-face {
+  font-family: 'Black Widow';
+  src: url('./assets/fonts/Black Widow.ttf');
+}
+@font-face {
+  font-family: 'Hawkeye';
+  src: url('./assets/fonts/Hawkeye.ttf');
+}
+@font-face {
+  font-family: 'Scarlet Witch';
+  src: url('./assets/fonts/Wanda.ttf');
+}
+@font-face {
+  font-family: 'Vision';
+  src: url('./assets/fonts/Vision.TTF');
+}
+@font-face {
+  font-family: 'Captain Marvel';
+  src: url('./assets/fonts/Captain Marvel.otf');
+}
+@font-face {
+  font-family: 'Doctor Strange';
+  src: url('./assets/fonts/Dr Strange.ttf');
+}
+@font-face {
+  font-family: 'Black Panther';
+  src: url('./assets/fonts/PantheraRegular-MVZ9J.ttf');
+}
+@font-face {
+  font-family: 'Spider-Man';
+  src: url('./assets/fonts/Spider Man.TTF');
+}
+@font-face {
+  font-family: 'Ant-Man';
+  src: url('./assets/fonts/Ant Man.otf');
+}
+@font-face {
+  font-family: 'War Machine';
+  src: url('./assets/fonts/Iron Man.otf');
+}
+@font-face {
+  font-family: 'Falcon';
+  src: url('./assets/fonts/American Captain.ttf');
+}
+@font-face {
+  font-family: 'Winter Soldier';
+  src: url('./assets/fonts/American Captain.ttf');
+}
+@font-face {
+  font-family: 'Gamora';
+  src: url('./assets/fonts/Gamora.otf');
+}
+@font-face {
+  font-family: 'Nebula';
+  src: url('./assets/fonts/Guardians.ttf');
+}
+@font-face {
+  font-family: 'Star-Lord';
+  src: url('./assets/fonts/Star Lord.ttf');
+}
+@font-face {
+  font-family: 'Rocket Raccoon';
+  src: url('./assets/fonts/Rocket Raccoon.ttf');
+}
+@font-face {
+  font-family: 'Groot';
+  src: url('./assets/fonts/Groot.ttf');
+}
+@font-face {
+  font-family: 'Drax the Destroyer';
+  src: url('./assets/fonts/Hulk.ttf');
+}
+@font-face {
+  font-family: 'Mantis';
+  src: url('./assets/fonts/Mighty Mantis Personal Use Without Watermark.ttf');
+}
+@font-face {
+  font-family: 'Okoye';
+  src: url('./assets/fonts/PantheraRegular-MVZ9J.ttf');
+}
+@font-face {
+  font-family: 'Wong';
+  src: url('./assets/fonts/KungFuMasterExpanded-X32x2.otf');
+}
+@font-face {
+  font-family: 'Valkyrie';
+  src: url('./assets/fonts/Thor.ttf');
+}
+@font-face {
+  font-family: 'Ancient One';
+  src: url('./assets/fonts/Dr Strange.ttf');
+}
+@font-face {
+  font-family: 'Nick Fury';
+  src: url('./assets/fonts/AVENGEANCE HEROIC AVENGER.ttf');
+}
+@font-face {
+  font-family: 'Pepper Potts';
+  src: url('./assets/fonts/Iron Man.otf');
+}
+@font-face {
+  font-family: 'Thanos';
+  src: url('./assets/fonts/GalacticVanguardianNcv-myVP.ttf');
+}
+@font-face {
+  font-family: 'Deadpool';
+  src: url('./assets/fonts/DeadpoolMovie-9AzL.ttf');
+}
+@font-face {
+  font-family: 'Venom';
+  src: url('./assets/fonts/RW-leichenhaus.ttf');
+}
+@font-face {
+  font-family: 'Loki';
+  src: url('./assets/fonts/ARB 85 Poster Script JAN-39 FRE.ttf');
+}
+@font-face {
+  font-family: 'Hela';
+  src: url('./assets/fonts/Renegade Fonts - HelaBasic 600.otf');
+}
+@font-face {
+  font-family: 'Ultron';
+  src: url('./assets/fonts/AgeOfUltron-W7on.ttf');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: myFont;
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
