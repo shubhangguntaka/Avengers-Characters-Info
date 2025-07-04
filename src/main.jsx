@@ -5,7 +5,10 @@ import App from './App.jsx'
 import { ColorThemeProvider } from './ColorThemeContext';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <div className="hide-scrollbar overflow-scroll h-screen">
+    {/* your app content */}
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  </div>
 )
