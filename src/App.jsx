@@ -66,6 +66,7 @@ function App() {
           </div>
         </div>
       </Router>
+      <footer>Copyright © Shubhang. 2025</footer>
     </ColorThemeProvider>
   );
 }
