@@ -32,6 +32,18 @@ function App() {
       moviesRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  // inside App function
+const handleSearchCharacter = (name) => {
+  const index = characters.findIndex((char) =>
+    char.name.toLowerCase().includes(name.toLowerCase())
+  );
+  if (index !== -1) {
+    setCurrentCharacterIdx(index);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    alert(`Character "${name}" not found.`);
+  }
+};
 
   return (
     <ColorThemeProvider>
@@ -41,6 +53,7 @@ function App() {
             onHomeClick={scrollToTop}
             onTimelineClick={scrollToTimeline}
             onMoviesClick={scrollToMovies}
+            onSearchCharacter={handleSearchCharacter}
           />
           <div className="pt-20">
             <div ref={heroRef} />
