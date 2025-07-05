@@ -157,7 +157,19 @@ const characters = [
     fontFamily: 'Ant-Man',
   },
   {
-    id: 14,
+    id: 14, // Assign a unique ID for Wasp
+    name: 'Wasp',
+    originalName: 'Hope van Dyne',
+    photo: '/wasp.png', // Assuming you have a 'wasp.png' image in your public folder
+    description: 'A brilliant scientist and daughter of Hank Pym and Janet van Dyne. She becomes the Wasp, using a specialized suit and Pym Particles to shrink and fly, fighting alongside Ant-Man and later joining the Avengers.',
+    powers: 'Ability to shrink to insect size or grow, with proportional strength and durability; flight via bio-synthetic wings; energy blasts; expert in martial arts and hand-to-hand combat; genius-level intellect.',
+    birth: 'Not applicable (born in the USA, exact date unknown)',
+    death: 'Not applicable (survived the events of the MCU, continues to be a hero)',
+    bgColor: '#4a148c', // Deep Purple (Wasp) - or choose another fitting color
+    fontFamily: 'Ant-Man', // You might need to add a custom font for "Wasp" if you have one
+  },
+  {
+    id: 15,
     name: 'War Machine',
     originalName: 'James Rupert "Rhodey" Rhodes',
     photo: '/war-machine.png',
@@ -169,7 +181,7 @@ const characters = [
     fontFamily: 'War Machine',
   },
   {
-    id: 15,
+    id: 16,
     name: 'Falcon',
     originalName: 'Sam Wilson',
     photo: '/falcon.png',
@@ -181,7 +193,7 @@ const characters = [
     fontFamily: 'Falcon',
   },
   {
-    id: 16,
+    id: 17,
     name: 'Winter Soldier',
     originalName: 'James Buchanan "Bucky" Barnes',
     photo: '/winter-soldier.png',
@@ -193,7 +205,7 @@ const characters = [
     fontFamily: 'Winter Soldier',
   },
   {
-    id: 17,
+    id: 18,
     name: 'Gamora',
     originalName: 'Gamora',
     photo: '/gamora.png',
@@ -205,7 +217,7 @@ const characters = [
     fontFamily: 'Gamora',
   },
   {
-    id: 18,
+    id: 19,
     name: 'Nebula',
     originalName: 'Nebula',
     photo: '/nebula.png',
@@ -217,7 +229,7 @@ const characters = [
     fontFamily: 'Nebula',
   },
   {
-    id: 19,
+    id: 20,
     name: 'Star-Lord',
     originalName: 'Peter Quill',
     photo: '/star-lord.png',
@@ -229,7 +241,7 @@ const characters = [
     fontFamily: 'Star-Lord',
   },
   {
-    id: 20,
+    id: 21,
     name: 'Rocket Raccoon',
     originalName: 'Rocket',
     photo: '/rocket.png',
@@ -241,7 +253,7 @@ const characters = [
     fontFamily: 'Rocket Raccoon',
   },
   {
-    id: 21,
+    id: 22,
     name: 'Groot',
     originalName: 'Groot',
     photo: '/groot.png',
@@ -253,7 +265,7 @@ const characters = [
     fontFamily: 'Groot',
   },
   {
-    id: 22,
+    id: 23,
     name: 'Drax the Destroyer',
     originalName: 'Arthur Douglas',
     photo: '/drax.png',
@@ -265,7 +277,7 @@ const characters = [
     fontFamily: 'Drax the Destroyer',
   },
   {
-    id: 23,
+    id: 24,
     name: 'Mantis',
     originalName: 'Mantis',
     photo: '/mantis.png',
@@ -277,7 +289,7 @@ const characters = [
     fontFamily: 'Mantis',
   },
   {
-    id: 24,
+    id: 25,
     name: 'Okoye',
     originalName: 'Okoye',
     photo: '/okoye.png',
@@ -289,7 +301,7 @@ const characters = [
     fontFamily: 'Okoye',
   },
   {
-    id: 25,
+    id: 26,
     name: 'Wong',
     originalName: 'Wong',
     photo: '/wong.png',
@@ -301,7 +313,7 @@ const characters = [
     fontFamily: 'Wong',
   },
   {
-    id: 26,
+    id: 27,
     name: 'Valkyrie',
     originalName: 'Brunnhilde',
     photo: '/valkyrie.png',
@@ -313,7 +325,7 @@ const characters = [
     fontFamily: 'Valkyrie',
   },
   {
-    id: 27,
+    id: 28,
     name: 'Ancient One',
     originalName: 'Tilda Swinton\'s Character',
     photo: '/ancient-one.png',
@@ -325,7 +337,7 @@ const characters = [
     fontFamily: 'Ancient One',
   },
   {
-    id: 28,
+    id: 29,
     name: 'Nick Fury',
     originalName: 'Nick Fury',
     photo: '/nick-fury.png',
@@ -337,7 +349,7 @@ const characters = [
     fontFamily: 'Nick Fury',
   },
   {
-    id: 29,
+    id: 30,
     name: 'Pepper Potts',
     originalName: 'Virginia "Pepper" Potts',
     photo: '/pepper-potts.png',
@@ -349,7 +361,7 @@ const characters = [
     fontFamily: 'Pepper Potts',
   },
   {
-    id: 30,
+    id: 31,
     name: 'Thanos',
     originalName: 'Thanos',
     photo: '/thanos.png',
@@ -361,7 +373,7 @@ const characters = [
     fontFamily: 'Thanos',
   },
   {
-    id: 31,
+    id: 32,
     name: 'Deadpool',
     originalName: 'Wade Winston Wilson',
     photo: '/deadpool.png',
@@ -373,7 +385,7 @@ const characters = [
     fontFamily: 'Deadpool',
   },
   {
-    id: 32,
+    id: 33,
     name: 'Venom',
     originalName: 'Eddie Brock (host) / Venom (symbiote)',
     photo: '/venom.png',
@@ -385,7 +397,7 @@ const characters = [
     fontFamily: 'Venom',
   },
   {
-    id: 33,
+    id: 34,
     name: 'Loki',
     originalName: 'Loki Laufeyson',
     photo: '/loki.png',
@@ -397,7 +409,7 @@ const characters = [
     fontFamily: 'Loki',
   },
   {
-    id: 34,
+    id: 35,
     name: 'Hela',
     originalName: 'Hela Odinsdottir',
     photo: '/hela.png',
@@ -409,7 +421,7 @@ const characters = [
     fontFamily: 'Hela',
   },
   {
-    id: 35,
+    id: 36, // Assign a unique ID for Ultron (adjust if other IDs are added)
     name: 'Ultron',
     originalName: 'Ultron',
     photo: '/ultron.png',
