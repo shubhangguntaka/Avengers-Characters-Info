@@ -376,6 +376,7 @@ const characterMovieTimeline = {
       { title: 'Avengers: Infinity War', year: 2018, note: 'Post-credits scene' },
       { title: 'Captain Marvel', year: 2019, note: 'Set in 1995' },
       { title: 'Avengers: Endgame', year: 2019 },
+      { title: 'Spider-Man: Far From Home', year: 2019, note: 'Set after Endgame' },
     ],
   },
   'Pepper Potts': {
