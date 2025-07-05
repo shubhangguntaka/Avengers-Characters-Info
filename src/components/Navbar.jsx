@@ -2,10 +2,20 @@
 import { useState } from "react";
 import { useColorTheme } from '../ColorThemeContext';
 
-const Navbar = ({ onHomeClick, onTimelineClick, onMoviesClick }) => {
+const Navbar = ({ onHomeClick, onTimelineClick, onMoviesClick, onSearchCharacter  }) => {
+// Add this prop to the component
   const [isOpen, setIsOpen] = useState(false);
   const { color } = useColorTheme();
+  const [searchTerm, setSearchTerm] = useState('');
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (onSearchCharacter && searchTerm.trim()) {
+      onSearchCharacter(searchTerm.trim());
+      setSearchTerm('');
+      setIsOpen(false);
+    }
+  };
   return (
     <nav className="fixed top-0 left-0 h-30 w-full z-50 flex justify-between items-center bg-opacity-95">
       {/* Logo */}
@@ -71,6 +81,21 @@ const Navbar = ({ onHomeClick, onTimelineClick, onMoviesClick }) => {
         >
           movies
         </button>
+         {/* Search Bar */}
+        <form onSubmit={handleSearch} className="flex items-center bg-white/10 px-3 py-1 rounded-full">
+          <input
+            type="text"
+            placeholder="Search character..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="bg-transparent text-white placeholder-gray-300 outline-none px-2"
+          />
+          <button type="submit" 
+          style={{ backgroundColor: color, transition: 'background-color 0.6s cubic-bezier(0.4,0,0.2,1)' }}
+          className="text-white px-2 hover:text-gray-300">
+            🔍
+          </button>
+        </form>
       </div>
     </nav>
   );
