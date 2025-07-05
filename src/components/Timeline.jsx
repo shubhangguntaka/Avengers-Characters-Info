@@ -20,12 +20,14 @@ const moviePosters = {
   'The Incredible Hulk': '/movies/the-incredible-hulk.jpg',
   'Hulk': '/movies/hulk.jpg',
   'Black Widow': '/movies/black-widow.jpg',
-  'Spider-Man 3': '/movies/spiderman 3.jpg',
+  'Spider-Man 3': '/movies/spiderman-3.jpg',
   'Spider-Man': '/movies/spiderman.jpg',
-  'Spider-Man 2': '/movies/spiderman 3.jpg',
+  'Spider-Man 2': '/movies/spiderman-2.jpg',
   'The Amazing Spider-Man': '/movies/amazing-spiderman.jpg',
   'The Amazing Spider-Man 2': '/movies/amazing-spiderman-2.jpg',
   'Spider-Man: Homecoming': '/movies/spiderman-homecoming.jpg',
+  'Spider-Man: Far From Home': '/movies/far-from-home.jpg',
+  'Spider-Man: No Way Home': '/movies/no-way-home.jpg',
   'Avengers: Age of Ultron': '/movies/age-of-ultron.jpg',
   'Avengers: Infinity War': '/movies/infinity-war.jpg',
   'Avengers: Endgame': '/movies/endgame.jpg',
@@ -37,10 +39,10 @@ const moviePosters = {
   'Captain Marvel': '/movies/captain-marvel.jpg',
   'Black Panther': '/movies/black-panther.jpg',
   // Specific character posters
-  'Captain America 1944':'/movies/captain-america-1944.jpg',
-  'Captain America 1979':'/movies/captain-america-1979.jpg',
-  'Captain America II: Death Too Soon':'/movies/death-too-soon.jpg',
-  'Captain America 1990':'/movies/captain-america-1990.jpg',
+  'Captain America 1944': '/movies/captain-america-1944.jpg',
+  'Captain America 1979': '/movies/captain-america-1979.jpg',
+  'Captain America II: Death Too Soon': '/movies/death-too-soon.jpg',
+  'Captain America 1990': '/movies/captain-america-1990.jpg',
   'Hawkeye': '/hawkeye.png',
   'Scarlet Witch': '/scarlet-witch.png',
   'Vision': '/vision.png',
@@ -51,7 +53,7 @@ const moviePosters = {
   'Nebula': '/nebula.png',
   'Star-Lord': '/star-lord.png',
   'Rocket Raccoon': '/rocket.png',
-  'Groot': '/movies/groot.jpg',
+  'I am Groot': '/movies/groot.jpg',
   'Drax the Destroyer': '/drax.png',
   'Mantis': '/mantis.png',
   'Okoye': '/okoye.png',
@@ -70,6 +72,8 @@ const moviePosters = {
   'Venom: The Last Dance': '/movies/the-last-dance.jpg',
   'Loki': '/movies/loki.jpg',
   'What If...?': '/movies/what-if.jpg',
+  // Wasp character poster
+  'Wasp': '/wasp.png', // Assuming you have an image for Wasp in your public folder
 };
 
 // Character movie timeline data (character name => { beforeMCU: [], mcu: [] })
@@ -210,6 +214,8 @@ const characterMovieTimeline = {
       { title: 'Spider-Man: Homecoming', year: 2017 },
       { title: 'Avengers: Infinity War', year: 2018 },
       { title: 'Avengers: Endgame', year: 2019 },
+      { title: 'Spider-Man: Far From Home', year: 2019, note: 'Set after Endgame' },
+      { title: 'Spider-Man: No Way Home', year: 2021 },
     ],
   },
   'Ant-Man': {
@@ -218,6 +224,15 @@ const characterMovieTimeline = {
       { title: 'Ant-Man', year: 2015 },
       { title: 'Captain America: Civil War', year: 2016 },
       { title: 'Ant-Man and the Wasp', year: 2018 },
+      { title: 'Avengers: Endgame', year: 2019 },
+    ],
+  },
+  // Add Wasp character
+  'Wasp': {
+    beforeMCU: [],
+    mcu: [
+      { title: 'Ant-Man', year: 2015, note: 'As Hope van Dyne, trains Scott Lang' },
+      { title: 'Ant-Man and the Wasp', year: 2018, note: 'Becomes the Wasp' },
       { title: 'Avengers: Endgame', year: 2019 },
     ],
   },
@@ -298,6 +313,7 @@ const characterMovieTimeline = {
       { title: 'Guardians of the Galaxy Vol. 2', year: 2017, note: 'As Baby Groot' },
       { title: 'Avengers: Infinity War', year: 2018, note: 'As Teen Groot' },
       { title: 'Avengers: Endgame', year: 2019, note: 'As Teen Groot' },
+      { title: 'I am Groot', year: 2022, note: 'Disney+ animated shorts' },
     ],
   },
   'Drax the Destroyer': {
@@ -442,6 +458,8 @@ const movieEvents = {
   'Avengers: Age of Ultron': 'Ultron threatens Earth, Avengers create Vision.',
   'Captain America: Civil War': 'Avengers split over Sokovia Accords.',
   'Spider-Man: Homecoming': 'Peter balances high school and hero life.',
+  'Spider-Man: Far From Home': 'Peter deals with the aftermath of Endgame and Mysterio.',
+  'Spider-Man: No Way Home': 'Spider-Man deals with multiversal threats and past villains.',
   'Avengers: Infinity War': 'Thanos collects the Infinity Stones.',
   'Avengers: Endgame': 'Final battle against Thanos, heroes restore half of all life.',
   'Captain America: The First Avenger': 'Steve Rogers becomes a super-soldier in WWII.',
@@ -487,13 +505,15 @@ const movieEvents = {
   'Venom: Let There Be Carnage': 'Eddie and Venom face off against Carnage.',
   'Venom: The Last Dance': 'Eddie and Venom are on the run from both humans and aliens.',
   'Spider-Man 3': 'Peter Parker deals with new villains, including Eddie Brock as Venom.',
-  'Spider-Man: No Way Home': 'Spider-Man encounters characters from other universes.',
+  'I am Groot': 'Groot communicates using only his signature phrase.',
+  // Add Wasp's movie event
+  'Wasp': 'Hope van Dyne joins Scott Lang as the Wasp, a size-shifting hero.',
 };
 
 
 const Timeline = ({ character }) => {
   // const [altDesign, setAltDesign] = useState(false); // This state isn't used, can remove or implement functionality
-  
+
   // Get timeline data for the character
   const timelineData = characterMovieTimeline[character.name] || { beforeMCU: [], mcu: [] };
   const beforeMCUMovies = timelineData.beforeMCU || [];
