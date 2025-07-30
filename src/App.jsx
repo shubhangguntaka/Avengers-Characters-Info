@@ -95,7 +95,7 @@ function Landing() {
         onEnded={handleVideoEnd}
       />
       {/* Skip button styled like Prime Video, bottom right, mobile responsive */}
-      <div className="absolute bottom-8 right-8 z-20">
+      <div className="absolute top-8 right-8 z-20">
         <button
           onClick={handleEnterClick}
           className="px-6 py-3 opacity-90 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-yellow-500"
