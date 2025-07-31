@@ -130,7 +130,7 @@ function Landing() {
       {/* Mute/Unmute button, bottom right, transparent, mobile responsive */}
       <button
         onClick={handleMuteToggle}
-        className="absolute bottom-8 right-8 z-20 p-3 bg-black bg-opacity-30 hover:bg-opacity-50 transition-colors"
+        className="absolute top-8 left-8 z-20 p-3 bg-black bg-opacity-30 hover:bg-opacity-50 transition-colors"
         style={{ color: 'white', border: 'none', outline: 'none' }}
         aria-label={muted ? 'Unmute video' : 'Mute video'}
       >
@@ -141,8 +141,8 @@ function Landing() {
           </svg>
         ) : (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 5.25L6 9H3.75A.75.75 0 003 9.75v4.5c0 .414.336.75.75.75H6l5.25 3.75V5.25zM16.5 8.25a6 6 0 010 7.5M19.5 6a9 9 0 010 12" />
-</svg>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 5.25L6 9H3.75A.75.75 0 003 9.75v4.5c0 .414.336.75.75.75H6l5.25 3.75V5.25zM16.5 8.25a6 6 0 010 7.5M19.5 6a9 9 0 010 12" />
+          </svg>
 
         )}
       </button>
